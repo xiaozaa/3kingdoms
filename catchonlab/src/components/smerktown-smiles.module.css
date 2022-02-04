@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "cartoonist_kooky";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/cartoonist_kooky.ttf") format("truetype");
+}
+
+.smerktownBackground {
+  width: 100vw;
+}
+
+.smerktownSmilesBackground {
+  height: 600px;
+  background-image: url("../images/smerktown-smile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "cartoonist_kooky";
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.smerktownSmilesBackground .smilesText {
+  margin-left: 20px;
+}
+
+.smerktownSmilesBackground .smilesText {
+  width: 40%;
+}
+
+.smerktownSmilesBackground .positivelyText {
+  width: 40%;
+  margin-left: 15%;
+}
+
+.smerktownSmilesAvatars .smerktownSmilesAvatarsLine img {
+  width: 25%;
+}

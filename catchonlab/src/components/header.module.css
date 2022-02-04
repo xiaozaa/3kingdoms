@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "alph";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/alph.ttf") format("truetype");
+}
+
+.headerWrapper {
+  font-family: "alph";
+  color: #ffea42;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+.headerLeft {
+  float: left;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.headerRight {
+  float: right;
+  font-size: 16px;
+}
+
+.headerRight span {
+  margin: 0 10px;
+  display: inline-block;
+  margin-top: 5px;
+}

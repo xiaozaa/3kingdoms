@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "alph";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/alph.ttf") format("truetype");
+}
+
+.roadMapWrapper {
+  font-family: alph;
+}
+
+.roadMapWrapper h1 {
+  font-size: 60px;
+}

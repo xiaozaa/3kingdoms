@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "cartoonist_kooky";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/cartoonist_kooky.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "alph";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/alph.ttf") format("truetype");
+}
+
+.giftWrapSystem {
+  height: 700px;
+  background-image: url("../images/yellow-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "cartoonist_kooky";
+  padding: 0 10%;
+}
+
+.giftWrapImagesWrapper {
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.giftWrapSystem h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-family: "alph";
+}
+
+.giftWrapImagesWrapper img {
+  width: 30%;
+  margin: 20px 0;
+}
