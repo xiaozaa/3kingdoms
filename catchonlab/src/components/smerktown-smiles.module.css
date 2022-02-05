@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 @font-face {
   font-family: "cartoonist_kooky";
   font-style: normal;
@@ -5,8 +7,29 @@
   src: url("../fonts/cartoonist_kooky.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "alph";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/alph.ttf") format("truetype");
+}
+
 .smerktownBackground {
   width: 100vw;
+  height: 600px;
+  background-image: url("../images/smerktown.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "alph";
+  color: white;
+  text-shadow: var(--text-shadow);
+}
+
+.smerktownBackground p {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 72px;
 }
 
 .smerktownSmilesBackground {
@@ -26,14 +49,20 @@
 }
 
 .smerktownSmilesBackground .smilesText {
-  width: 40%;
+  width: 44%;
+  margin-top: 30px;
 }
 
 .smerktownSmilesBackground .positivelyText {
-  width: 40%;
-  margin-left: 15%;
+  width: 44%;
+  margin-top: 30px;
+  margin-left: 10%;
 }
 
 .smerktownSmilesAvatars .smerktownSmilesAvatarsLine img {
   width: 25%;
+}
+
+.smerktownSmilesAvatars .smerktownSmilesAvatarsLine {
+  margin-top: 100px;
 }

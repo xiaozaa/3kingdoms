@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "./smerktown-smiles.module.css";
 
-export const SmerktownSmiles = ({ data }) => {
+export const SmerktownSmiles = () => {
   return (
-    <div>
-      <img
-        className={styles.smerktownBackground}
-        src={require("../images/smerktown.jpg")}
-        alt={"smerktown"}
-      />
+    <div id="welcome">
+      <div className={styles.smerktownBackground}>
+        <p>SMERKTOWN SMILES</p>
+      </div>
       <div className={styles.smerktownSmilesBackground}>
         <div className={styles.smilesText}>
           <h1>The Smiles</h1>

@@ -1,4 +1,8 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
+
+import { FaDiscord } from "react-icons/fa";
+
 import styles from "./header.module.css";
 
 export const Header = () => {
@@ -6,10 +10,13 @@ export const Header = () => {
     <div className={styles.headerWrapper}>
       <span className={styles.headerLeft}>Smiles</span>
       <div className={styles.headerRight}>
-        <span>Smerktown Smiles</span>
-        <span>Giftwrap System</span>
-        <span>Smile Trip</span>
-        <span>FAQ</span>
+        <Link to="#welcome">Smerktown Smiles</Link>
+        <Link to="#giftwrap">Giftwrap System</Link>
+        <Link to="#roadmap">Smile Trip</Link>
+        <Link to="#faq">FAQ</Link>
+        <a href="https://discord.gg/wHYaBDgasG" target="_blank">
+          <FaDiscord size={25} />
+        </a>
       </div>
     </div>
   );

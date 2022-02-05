@@ -3,7 +3,7 @@ import styles from "./gift-wrap-system.module.css";
 
 export const GiftWrapSystem = () => {
   return (
-    <div className={styles.giftWrapSystem}>
+    <div id={"giftwrap"} className={styles.giftWrapSystem}>
       <h1>The GIFTWRAP SYSTEM</h1>
       <p>
         A yearly tradition of Smerk Town is the soul check festival. During this
@@ -13,9 +13,18 @@ export const GiftWrapSystem = () => {
       </p>
       <div className={styles.giftWrapImagesWrapper}>
         <img src={require("../images/smilie.png")} alt={"gift wrap smilie"} />
-        <span>+</span>
+        <img
+          className={styles.giftWrapImagesIcon}
+          src={require("../images/+.png")}
+          alt={"plus"}
+        />
         <img src={require("../images/giftwrap2.png")} alt={"gift wrap bar"} />
-        <span>= ?</span>
+        <img
+          className={styles.giftWrapImagesIcon}
+          src={require("../images/=.png")}
+          alt={"equal"}
+        />
+        <span>?</span>
       </div>
       <p>
         a wrap nft will be airdrop to all smilies holders. You are able to

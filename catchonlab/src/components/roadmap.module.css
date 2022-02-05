@@ -7,8 +7,80 @@
 
 .roadMapWrapper {
   font-family: alph;
+  background: linear-gradient(white, var(--color-yellow));
 }
 
 .roadMapWrapper h1 {
-  font-size: 60px;
+  font-size: 72px;
+}
+
+.timeline {
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+}
+
+.timeline::before {
+  content: "";
+  width: 8px;
+  height: 90%;
+  background: black;
+  left: 49.7%;
+  top: 0;
+  position: absolute;
+}
+
+.timeline::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+.timelineItem {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timelineItem::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.timelineIcon {
+  background: white;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -50px;
+  border-radius: 50%;
+}
+
+.timelineIcon img {
+  position: relative;
+  top: -150px;
+  left: -150px;
+  width: 400px;
+}
+
+.timelineContent {
+  width: 35%;
+  padding: 0 20px 40px;
+}
+
+.timelineContent h2 {
+  font-size: 38px;
+}
+
+.timelineContent p {
+  font-size: 20px;
+}
+
+.timelineContentRight {
+  float: right;
 }

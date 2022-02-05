@@ -1,14 +1,22 @@
+@import "./variables.css";
+
 @font-face {
-  font-family: "alph";
+  font-family: "cartoonist_kooky";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/alph.ttf") format("truetype");
+  src: url("../fonts/cartoonist_kooky.ttf") format("truetype");
 }
 
 .headerWrapper {
-  font-family: "alph";
-  color: #ffea42;
-  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-family: "cartoonist_kooky";
+  color: var(--color-yellow);
+  text-shadow: var(--text-shadow);
+  background-color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .headerLeft {
@@ -20,10 +28,13 @@
 .headerRight {
   float: right;
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-.headerRight span {
+.headerRight a {
   margin: 0 10px;
   display: inline-block;
-  margin-top: 5px;
+  color: var(--color-yellow);
+  text-decoration: none;
 }

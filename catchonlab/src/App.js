@@ -1,18 +1,14 @@
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Header } from "./components/header";
-import { SmerktownSmiles } from "./components/smerktown-smiles";
-import { GiftWrapSystem } from "./components/gift-wrap-system";
-import { Roadmap } from "./components/roadmap";
+import { Home } from "./components/home";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <SmerktownSmiles />
-      <GiftWrapSystem />
-      <Roadmap />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
