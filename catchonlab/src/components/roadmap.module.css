@@ -17,13 +17,12 @@
 .timeline {
   width: 100%;
   position: relative;
-  padding: 0 10px;
 }
 
 .timeline::before {
   content: "";
   width: 8px;
-  height: 90%;
+  height: 1000px;
   background: black;
   left: 49.7%;
   top: 0;
@@ -40,6 +39,7 @@
 .timelineItem {
   margin-bottom: 50px;
   position: relative;
+  height: 200px;
 }
 
 .timelineItem::after {
@@ -83,4 +83,23 @@
 
 .timelineContentRight {
   float: right;
+}
+
+@media (max-width: 622px) {
+  .roadMapWrapper h1 {
+    font-size: 60px;
+  }
+
+  .roadMapWrapper h2 {
+    font-size: 24px;
+  }
+
+  .roadMapWrapper p {
+    font-size: 14px;
+  }
+
+  .timelineContent {
+    width: 35%;
+    padding: 0 10px 20px;
+  }
 }

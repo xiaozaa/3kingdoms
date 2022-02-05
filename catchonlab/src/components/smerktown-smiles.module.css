@@ -16,7 +16,7 @@
 
 .smerktownBackground {
   width: 100vw;
-  height: 600px;
+  height: 100vh;
   background-image: url("../images/smerktown.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 }
 
 .smerktownSmilesBackground {
-  height: 600px;
+  height: 100vh;
   background-image: url("../images/smerktown-smile.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -65,4 +65,21 @@
 
 .smerktownSmilesAvatars .smerktownSmilesAvatarsLine {
   margin-top: 100px;
+}
+
+@media (max-width: 622px) {
+  .smerktownBackground p {
+    padding-top: 94px;
+    font-size: 60px;
+  }
+
+  .smerktownSmilesBackground .smilesText h1,
+  .smerktownSmilesBackground .positivelyText h1 {
+    font-size: 32px;
+  }
+
+  .smerktownSmilesBackground .smilesText p,
+  .smerktownSmilesBackground .positivelyText p {
+    font-size: 14px;
+  }
 }

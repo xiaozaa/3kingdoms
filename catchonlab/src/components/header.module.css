@@ -17,12 +17,17 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .headerLeft {
   float: left;
   font-size: 24px;
   margin-left: 10px;
+}
+
+.headerLeft:hover {
+  cursor: default;
 }
 
 .headerRight {
@@ -37,4 +42,13 @@
   display: inline-block;
   color: var(--color-yellow);
   text-decoration: none;
+}
+
+@media (max-width: 622px) {
+  .headerLeft {
+    text-align: center;
+    float: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 }
