@@ -14,7 +14,11 @@ export const Header = () => {
         <Link to="#giftwrap">Giftwrap System</Link>
         <Link to="#roadmap">Smile Trip</Link>
         <Link to="#faq">FAQ</Link>
-        <a href="https://discord.gg/wHYaBDgasG" target="_blank">
+        <a
+          href="https://discord.gg/wHYaBDgasG"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaDiscord size={25} />
         </a>
       </div>
