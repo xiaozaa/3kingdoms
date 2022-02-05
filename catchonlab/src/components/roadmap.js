@@ -9,7 +9,7 @@ export const Roadmap = () => {
       <div className={styles.timeline}>
         <div className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
-            <img src={require("../images/roadmap/1s.png")} />
+            <img src={require("../images/roadmap/1s.png")} alt={"roadmap"} />
           </div>
           <div className={styles.timelineContent}>
             <h2>launch</h2>
@@ -19,7 +19,7 @@ export const Roadmap = () => {
 
         <div className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
-            <img src={require("../images/roadmap/2s.png")} />
+            <img src={require("../images/roadmap/2s.png")} alt={"roadmap"} />
           </div>
           <div
             className={`${styles.timelineContent} ${styles.timelineContentRight}`}
@@ -34,7 +34,7 @@ export const Roadmap = () => {
 
         <div className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
-            <img src={require("../images/roadmap/3s.png")} />
+            <img src={require("../images/roadmap/3s.png")} alt={"roadmap"} />
           </div>
           <div className={styles.timelineContent}>
             <h2>soul pass</h2>
@@ -47,7 +47,7 @@ export const Roadmap = () => {
 
         <div className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
-            <img src={require("../images/roadmap/4s.png")} />
+            <img src={require("../images/roadmap/4s.png")} alt={"roadmap"} />
           </div>
           <div
             className={`${styles.timelineContent} ${styles.timelineContentRight}`}
@@ -62,7 +62,7 @@ export const Roadmap = () => {
 
         <div className={styles.timelineItem}>
           <div className={styles.timelineIcon}>
-            <img src={require("../images/roadmap/5s.png")} />
+            <img src={require("../images/roadmap/5s.png")} alt={"roadmap"} />
           </div>
           <div className={styles.timelineContent}>
             <h2>phase 2</h2>
