@@ -91,3 +91,22 @@
 .timelineContentRight {
   float: right;
 }
+
+@media (max-width: 461px) {
+  .roadMapWrapper h1 {
+    font-size: 44px;
+  }
+
+  .timelineContent h2 {
+    font-size: 24px;
+  }
+
+  .timelineContent p {
+    font-size: 16px;
+  }
+
+  .timelineContent {
+    width: 30%;
+    padding: 0;
+  }
+}

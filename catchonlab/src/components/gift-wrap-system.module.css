@@ -49,3 +49,30 @@
 .giftWrapSystem p {
   text-align: center;
 }
+
+@media (max-width: 461px) {
+  .giftWrapSystem h1 {
+    font-size: 44px;
+  }
+
+  .giftWrapImagesWrapper {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+  }
+
+  .giftWrapImagesWrapper img {
+    width: 20%;
+  }
+
+  .giftWrapImagesWrapper .giftWrapImagesIcon {
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  .giftWrapSystem p {
+    margin: 0 20px;
+  }
+}

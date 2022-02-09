@@ -39,3 +39,13 @@
   color: var(--color-yellow);
   text-decoration: none;
 }
+
+@media (max-width: 461px) {
+  .headerWrapper {
+    width: 100%;
+  }
+
+  .headerLeft {
+    font-size: 16px;
+  }
+}

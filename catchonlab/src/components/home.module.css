@@ -86,3 +86,30 @@
   width: 20%;
   margin-top: 20px;
 }
+
+@media (max-width: 461px) {
+  .smileFlower {
+    display: none;
+  }
+
+  .smileWrapper img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .comingSoon {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .followUsOn {
+    margin-left: 30%;
+    width: 40%;
+    margin-top: 30px;
+  }
+
+  .buttonsWrapper img {
+    width: 150px;
+  }
+}
