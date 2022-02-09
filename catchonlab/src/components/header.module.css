@@ -11,12 +11,7 @@
   font-family: "cartoonist_kooky";
   color: var(--color-yellow);
   text-shadow: var(--text-shadow);
-  background-color: white;
   padding: 10px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
 }
 
@@ -37,23 +32,10 @@
   align-items: center;
 }
 
-.headerRight a {
+.headerRight a,
+.headerLeft a {
   margin: 0 10px;
   display: inline-block;
   color: var(--color-yellow);
   text-decoration: none;
-}
-
-@media (max-width: 622px) {
-  .headerLeft {
-    text-align: center;
-    float: none;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
-
-  .headerRight {
-    justify-content: center;
-    float: none;
-  }
 }

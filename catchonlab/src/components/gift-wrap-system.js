@@ -1,16 +1,14 @@
 import React from "react";
+
 import styles from "./gift-wrap-system.module.css";
+
+import { Header } from "../components/header";
 
 export const GiftWrapSystem = () => {
   return (
     <div id={"giftwrap"} className={styles.giftWrapSystem}>
+      <Header />
       <h1>The GIFTWRAP SYSTEM</h1>
-      <p>
-        A yearly tradition of Smerk Town is the soul check festival. During this
-        auspicious event, each smilie undergoes a scan revealing the inner
-        contents of their soul. During this event, the heads of each smilie are
-        opened and the inner characteristics are chosen.
-      </p>
       <div className={styles.giftWrapImagesWrapper}>
         <img src={require("../images/smilie.png")} alt={"gift wrap smilie"} />
         <img
@@ -27,13 +25,15 @@ export const GiftWrapSystem = () => {
         <span>?</span>
       </div>
       <p>
-        a wrap nft will be airdrop to all smilies holders. You are able to
-        reroll one time per festival if you are unhappy with the new
-        characteristic of your smilie. Although this is a great event, there are
-        chances of failing this procedure, which can lead to possessing an bad
-        soul. We are yet to discover what is causing the bad souls, they may be
-        part of something bigger.
+        A yearly tradition of Smerk Town is the soul check festival. During this
+        auspicious event, each smilie undergoes a scan revealing the inner
+        contents of their soul.
       </p>
+      <p>
+        During this event, the heads of each smilie are opened and the inner
+        characteristics are chosen.
+      </p>
+      <p>more to come...</p>
     </div>
   );
 };

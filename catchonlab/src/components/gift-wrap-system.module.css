@@ -16,13 +16,8 @@
 
 .giftWrapSystem {
   font-family: "cartoonist_kooky";
-  padding: 150px 10%;
-  background: linear-gradient(
-    white 6%,
-    var(--color-yellow) 12%,
-    var(--color-yellow) 88%,
-    white
-  );
+  background: var(--color-yellow);
+  height: 100vh;
 }
 
 .giftWrapImagesWrapper {
@@ -35,9 +30,10 @@
 
 .giftWrapSystem h1 {
   margin: 0;
-  padding: 20px 0;
+  padding-top: 60px;
   font-family: "alph";
-  font-size: 72px;
+  font-size: 56px;
+  text-align: center;
 }
 
 .giftWrapImagesWrapper img {
@@ -50,20 +46,6 @@
   margin-right: 30px;
 }
 
-@media (max-width: 622px) {
-  .giftWrapSystem h1 {
-    font-size: 46px;
-  }
-
-  .giftWrapSystem p {
-    font-size: 14px;
-  }
-
-  .giftWrapImagesWrapper .giftWrapImagesIcon {
-    width: 30px;
-  }
-
-  .giftWrapImagesWrapper {
-    font-size: 60px;
-  }
+.giftWrapSystem p {
+  text-align: center;
 }

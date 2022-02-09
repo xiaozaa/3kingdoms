@@ -7,15 +7,22 @@
 
 .roadMapWrapper {
   font-family: alph;
-  background: linear-gradient(white, var(--color-yellow));
+}
+
+.timelineWrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .roadMapWrapper h1 {
   font-size: 72px;
+  text-align: center;
+  margin: 40px 0 0;
 }
 
 .timeline {
-  width: 100%;
+  padding: 0 10%;
   position: relative;
 }
 
@@ -25,7 +32,7 @@
   height: 1000px;
   background: black;
   left: 49.7%;
-  top: 0;
+  top: 8%;
   position: absolute;
 }
 
@@ -83,23 +90,4 @@
 
 .timelineContentRight {
   float: right;
-}
-
-@media (max-width: 622px) {
-  .roadMapWrapper h1 {
-    font-size: 60px;
-  }
-
-  .roadMapWrapper h2 {
-    font-size: 24px;
-  }
-
-  .roadMapWrapper p {
-    font-size: 14px;
-  }
-
-  .timelineContent {
-    width: 35%;
-    padding: 0 10px 20px;
-  }
 }
