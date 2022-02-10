@@ -15,12 +15,6 @@
   flex-direction: column;
 }
 
-.roadMapWrapper h1 {
-  font-size: 72px;
-  text-align: center;
-  margin: 40px 0 0;
-}
-
 .timeline {
   padding: 0 10%;
   position: relative;
@@ -92,11 +86,13 @@
   float: right;
 }
 
-@media (max-width: 461px) {
-  .roadMapWrapper h1 {
-    font-size: 44px;
-  }
+.timelineBanner {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 40px;
+}
 
+@media (max-width: 461px) {
   .timelineContent h2 {
     font-size: 24px;
   }

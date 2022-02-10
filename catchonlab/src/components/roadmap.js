@@ -8,7 +8,11 @@ export const Roadmap = () => {
     <div id={"roadmap"} className={styles.roadMapWrapper}>
       <Header />
       <div className={styles.timelineWrapper}>
-        <h1>Road Map</h1>
+        <img
+          className={styles.timelineBanner}
+          src={require("../images/Layer 2.png")}
+          alt={"roadmap"}
+        />
         <div className={styles.timeline}>
           <div className={styles.timelineItem}>
             <div className={styles.timelineIcon}>
