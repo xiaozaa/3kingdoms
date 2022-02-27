@@ -1,22 +1,42 @@
 @import url("../common/variables.css");
 
 .headerWrapper {
-  display: flex;
-  align-items: center;
   background-color: var(--color-dark-grey);
   height: 50px;
   color: white;
   font-weight: 600;
 }
 
-.headerWrapper .headerLeft {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.headerWrapper ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 20px;
 }
 
-.headerWrapper .headerLeft img {
-  height: 28px;
-  margin: 0 10px 0 20px;
+.headerWrapper ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.headerWrapper ul li img {
+  width: 28px;
+  margin-right: 10px;
   filter: drop-shadow(0 0 0.75rem var(--color-green));
+}
+
+.headerWrapper ul li.headerRight {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+.headerWrapper ul li.headerRight a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerWrapper ul li.headerRight a:hover {
+  cursor: pointer;
 }

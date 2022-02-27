@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 export const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-      <p>Email: info@CatchOnLabs.com</p>
+      <p>Copyright catchon labs 2020</p>
     </div>
   );
 };

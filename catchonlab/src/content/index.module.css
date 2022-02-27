@@ -1,33 +1,82 @@
 .contentWrapper {
-  background-image: url("../images/bg.png");
   width: 100vw;
-  min-height: calc(100vh - 100px);
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: var(--color-dark-grey);
   color: white;
+  text-align: center;
+}
+
+.contentWrapper .banner {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: calc(100vh - 50px);
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.contentWrapper .title span {
+.contentWrapper .banner .title span {
   font-size: 72px;
   display: inline-block;
   margin: 0 5px;
   font-weight: 600;
 }
 
-.contentWrapper .title .greenDecoration {
+.contentWrapper .banner .title .greenDecoration {
   color: var(--color-green);
+}
+
+.contentWrapper .banner .subtitle {
+  font-size: 24px;
+  color: var(--color-light-grey);
+  width: 50%;
+  margin-bottom: 100px;
 }
 
 .contentWrapper .content {
   font-size: 24px;
-  color: var(--color-light-grey);
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
 }
 
 .contentWrapper p {
   margin: 0;
+}
+
+.content h3 {
+  text-align: center;
+  color: var(--color-green);
+}
+
+.content .contentTxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.content .contentTxt .contentTxtLeft {
+  width: 35%;
+  padding-left: 20px;
+}
+
+.content .contentTxt .contentTxtLeft svg {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 33%;
+  padding: 20px;
+}
+
+.content .contentTxt .contentTxtLeft .contentTxtBlackBG {
+  background-color: black;
+}
+
+.content .contentTxt .contentTxtRight {
+  width: 65%;
+  padding-right: 20px;
 }
