@@ -48,12 +48,12 @@ module.exports = {
   ],
   resolve: {
     fallback: {
-      https: require.resolve("https-browserify"),
+      "https": false,
       os: require.resolve("os-browserify/browser"),
-      http: require.resolve("stream-http"),
+      "http": false,
       stream: require.resolve("stream-browserify"),
       buffer: require.resolve("buffer/"),
-      crypto: require.resolve("crypto-browserify"),
+      "crypto": false,
     },
   },
 };

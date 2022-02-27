@@ -1,19 +1,22 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./home/home";
+import React from "react";
 
-import { Home } from "./components/home";
-import { GiftWrapSystem } from "./components/gift-wrap-system";
-import { Roadmap } from "./components/roadmap";
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/giftwrap" element={<GiftWrapSystem />} />
-        <Route path="/roadmap" element={<Roadmap />} />
-      </Routes>
-    </Router>
-  );
+  render() {
+    return (
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    );
+  }
 }
 
 export default App;

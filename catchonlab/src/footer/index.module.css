@@ -1,0 +1,14 @@
+@import url("../common/variables.css");
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  height: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.footerWrapper p {
+  margin-left: 20px;
+}

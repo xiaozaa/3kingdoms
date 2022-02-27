@@ -1,0 +1,22 @@
+@import url("../common/variables.css");
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  height: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.headerWrapper .headerLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerWrapper .headerLeft img {
+  height: 28px;
+  margin: 0 10px 0 20px;
+  filter: drop-shadow(0 0 0.75rem var(--color-green));
+}
