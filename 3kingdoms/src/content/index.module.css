@@ -1,0 +1,18 @@
+.contentWrapper {
+  width: 100vw;
+  color: white;
+  text-align: center;
+}
+
+.contentWrapper .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+}
+
+.contentWrapper .banner .title {
+  font-size: 72px;
+  font-weight: 600;
+}

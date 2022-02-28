@@ -1,0 +1,18 @@
+@import url("../common/variables.css");
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerWrapper p {
+  font-size: 12px;
+  font-variant: small-caps;
+}

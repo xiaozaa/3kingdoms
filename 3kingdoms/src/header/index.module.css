@@ -1,0 +1,109 @@
+@import url("../common/variables.css");
+
+.headerWrapper {
+  background-color: var(--color-dark-grey);
+  height: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.headerWrapper ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.headerWrapper ul li {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.headerWrapper ul li img {
+  width: 170px;
+  height: 30px;
+}
+
+.headerWrapper ul li.headerRight {
+  float: right;
+  margin: 0 10px;
+}
+
+.headerWrapper ul li.logoImg {
+  margin-top: 10px;
+}
+
+.headerWrapper ul li.headerRight img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.headerWrapper ul li.headerRight a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerWrapper ul li.headerRight a:hover {
+  cursor: pointer;
+}
+
+.headerWrapper ul li.headerRight .opensea {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/opensea.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headerWrapper ul li.headerRight .opensea:hover {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/opensea_click.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerWrapper ul li.headerRight .twitter {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/twitter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headerWrapper ul li.headerRight .twitter:hover {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/twitter_click.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerWrapper ul li.headerRight .discord {
+  width: 30px;
+  height: 23px;
+  background-image: url("../images/discord.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headerWrapper ul li.headerRight .discord:hover {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/discord_click.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
