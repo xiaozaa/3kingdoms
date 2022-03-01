@@ -1,2 +1,10 @@
+@font-face {
+  font-family: "fzdbsjw";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/fzdbsjw.ttf") format("truetype");
+}
+
 .homeWrapper {
+  font-family: "fzdbsjw";
 }

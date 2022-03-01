@@ -18,7 +18,9 @@ export const Header = () => {
     <div className={styles.headerWrapper}>
       <ul>
         {/* LEFT */}
-        <li className={styles.logoImg}>{t("home.threekingdoms")}</li>
+        <li className={styles.logoImg}>
+          <a href="/">{t("home.threekingdoms")}</a>
+        </li>
 
         {/* RIGHT */}
         {/* I18N */}
@@ -31,8 +33,7 @@ export const Header = () => {
               {Object.keys(lngs).map((lng) => (
                 <Dropdown.Item
                   style={{
-                    fontWeight:
-                      i18n.resolvedLanguage === lng ? "bold" : "normal",
+                    color: i18n.resolvedLanguage === lng ? "#9E3C3D" : "white",
                   }}
                   onClick={() => {
                     i18n.changeLanguage(lng);
@@ -59,10 +60,6 @@ export const Header = () => {
             target="_blank"
             className={styles.twitter}
           ></a>
-        </li>
-        {/* Home */}
-        <li className={`${styles.headerRight} ${styles.headerText}`}>
-          <a href="/"> {t("home.home")}</a>
         </li>
       </ul>
     </div>

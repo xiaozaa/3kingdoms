@@ -2,9 +2,8 @@ module.exports = {
   en: {
     translation: {
       home: {
-        threekingdoms: "Three Kingdoms",
-        home: "home",
-        copyright: "COPYRIGHT 2022 three kingdoms",
+        threekingdoms: "THREE KINGDOMS",
+        copyright: "Copyright 2022 three kingdoms club",
         comingsoon: "Coming Soon",
       },
     },
@@ -12,10 +11,9 @@ module.exports = {
   zh: {
     translation: {
       home: {
-        threekingdoms: "三国",
-        home: "主页",
-        copyright: "版权 2022 三国",
-        comingsoon: "即将开始",
+        threekingdoms: "THREE KINGDOMS",
+        copyright: "Copyright 2022 three kingdoms club",
+        comingsoon: "敬请期待",
       },
     },
   },

@@ -43,6 +43,12 @@
   align-items: center;
   padding: 0 10px;
   border-radius: 3px;
+  font-variant: small-caps;
+}
+
+.headerWrapper ul li.logoImg a {
+  text-decoration: none;
+  color: white;
 }
 
 .headerWrapper ul li.headerRight img {
@@ -81,41 +87,47 @@
 }
 
 .headerWrapper ul li.headerRight .twitter {
-  width: 80px;
-  height: 24px;
   background-image: url("../images/twitter.png");
+  width: 20px;
+  height: 18px;
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
+  background-size: cover;
+  margin: -2px 24px 0 26px;
 }
 
 .headerWrapper ul li.headerRight .twitter:hover {
-  width: 80px;
+  width: 70px;
   height: 50px;
   cursor: pointer;
   background-image: url("../images/twitter_click.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 
 .headerWrapper ul li.headerRight .discord {
-  width: 80px;
+  width: 70px;
   height: 25px;
   background-image: url("../images/discord.png");
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
+  background-size: cover;
 }
 
 .headerWrapper ul li.headerRight .discord:hover {
-  width: 80px;
+  width: 70px;
   height: 50px;
   cursor: pointer;
   background-image: url("../images/discord_click.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headerWrapper ul li.headerRight button {
@@ -129,7 +141,11 @@
 }
 
 .headerWrapper .headerRight.icon {
-  border-left: 1px solid lightgrey;
+  border-left: 1px solid var(--color-border-grey);
+}
+
+.headerWrapper .headerRight.icon:last-child {
+  border-left: none;
 }
 
 .headerWrapper .headerRight.icon.lng {
@@ -138,4 +154,5 @@
 
 .headerWrapper .headerRight.headerText {
   margin-right: 15px;
+  font-weight: 400;
 }
