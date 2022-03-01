@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 
 const lngs = {
   en: { nativeName: "English" },
-  zh: { nativeName: "Chinese" },
+  zh: { nativeName: "中文" },
 };
 
 export const Header = () => {
