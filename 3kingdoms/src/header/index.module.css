@@ -17,9 +17,11 @@
 
 .headerWrapper ul li {
   float: left;
+  min-width: 50px;
   height: 50px;
-  line-height: 50px;
-  font-size: 14px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .headerWrapper ul li img {
@@ -29,11 +31,18 @@
 
 .headerWrapper ul li.headerRight {
   float: right;
-  margin: 0 10px;
 }
 
 .headerWrapper ul li.logoImg {
   margin-top: 10px;
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 3px;
 }
 
 .headerWrapper ul li.headerRight img {
@@ -49,6 +58,7 @@
 
 .headerWrapper ul li.headerRight a:hover {
   cursor: pointer;
+  background-color: black;
 }
 
 .headerWrapper ul li.headerRight .opensea {
@@ -71,8 +81,8 @@
 }
 
 .headerWrapper ul li.headerRight .twitter {
-  width: 25px;
-  height: 25px;
+  width: 80px;
+  height: 24px;
   background-image: url("../images/twitter.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -81,7 +91,7 @@
 }
 
 .headerWrapper ul li.headerRight .twitter:hover {
-  width: 50px;
+  width: 80px;
   height: 50px;
   cursor: pointer;
   background-image: url("../images/twitter_click.png");
@@ -90,8 +100,8 @@
 }
 
 .headerWrapper ul li.headerRight .discord {
-  width: 30px;
-  height: 23px;
+  width: 80px;
+  height: 25px;
   background-image: url("../images/discord.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -100,10 +110,32 @@
 }
 
 .headerWrapper ul li.headerRight .discord:hover {
-  width: 50px;
+  width: 80px;
   height: 50px;
   cursor: pointer;
   background-image: url("../images/discord_click.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.headerWrapper ul li.headerRight button {
+  background: none;
+  border: none;
+}
+
+.headerWrapper .headerRight .dropdownMenu {
+  position: fixed !important;
+  background-color: var(--color-dark-grey);
+}
+
+.headerWrapper .headerRight.icon {
+  border-left: 1px solid lightgrey;
+}
+
+.headerWrapper .headerRight.icon.lng {
+  padding-left: 10px;
+}
+
+.headerWrapper .headerRight.headerText {
+  margin-right: 15px;
 }

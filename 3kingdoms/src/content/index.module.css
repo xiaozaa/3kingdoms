@@ -15,4 +15,15 @@
 .contentWrapper .banner .title {
   font-size: 72px;
   font-weight: 600;
+  background-image: url("../images/coming\ soon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 63px 111px 76px;
+}
+
+@media screen and (max-width: 657px) {
+  .contentWrapper .banner .title {
+    font-size: 27px;
+  }
 }

@@ -1,36 +1,68 @@
 import React from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import { useTranslation } from "react-i18next";
 
-import logo from "../images/logo.png";
 import languageImg from "../images/language.png";
 
 import styles from "./index.module.css";
 
+const lngs = {
+  en: { nativeName: "English" },
+  zh: { nativeName: "Chinese" },
+};
+
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className={styles.headerWrapper}>
       <ul>
         {/* LEFT */}
-        <li className={styles.logoImg}>
-          <img src={logo} />
-        </li>
+        <li className={styles.logoImg}>{t("home.threekingdoms")}</li>
 
         {/* RIGHT */}
-        <li className={styles.headerRight}>
-          <img src={languageImg} />
+        {/* I18N */}
+        <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
+          <Dropdown>
+            <Dropdown.Toggle>
+              <img src={languageImg} />
+            </Dropdown.Toggle>
+            <Dropdown.Menu className={styles.dropdownMenu}>
+              {Object.keys(lngs).map((lng) => (
+                <Dropdown.Item
+                  style={{
+                    fontWeight:
+                      i18n.resolvedLanguage === lng ? "bold" : "normal",
+                  }}
+                  onClick={() => {
+                    i18n.changeLanguage(lng);
+                  }}
+                >
+                  {lngs[lng].nativeName}
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </Dropdown>
         </li>
-        <li className={styles.headerRight}>
-          <span className={styles.discord}></span>
+        {/* discord */}
+        <li className={`${styles.headerRight} ${styles.icon}`}>
+          <a
+            href={"https://discord.com/invite/2HGQ7FdJDu"}
+            target="_blank"
+            className={styles.discord}
+          ></a>
         </li>
-        <li className={styles.headerRight}>
-          <span className={styles.twitter}></span>
+        {/* twitter */}
+        <li className={`${styles.headerRight} ${styles.icon}`}>
+          <a
+            href={"https://twitter.com/3KingdomsClub"}
+            target="_blank"
+            className={styles.twitter}
+          ></a>
         </li>
-        <li className={styles.headerRight}>
-          <span className={styles.opensea}></span>
-        </li>
-        <li className={styles.headerRight}>Roadmap</li>
-        <li className={styles.headerRight}>Team</li>
-        <li className={styles.headerRight}>
-          <a href="/">Home</a>
+        {/* Home */}
+        <li className={`${styles.headerRight} ${styles.headerText}`}>
+          <a href="/"> {t("home.home")}</a>
         </li>
       </ul>
     </div>
