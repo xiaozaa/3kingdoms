@@ -1,7 +1,7 @@
 @import url("../common/variables.css");
 
 .headerWrapper {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-grey-80);
   height: 50px;
   color: white;
   font-weight: 600;
@@ -87,15 +87,16 @@
 }
 
 .headerWrapper ul li.headerRight .twitter {
+  width: 70px;
+  height: 25px;
   background-image: url("../images/twitter.png");
-  width: 20px;
-  height: 18px;
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   background-size: cover;
-  margin: -2px 24px 0 26px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerWrapper ul li.headerRight .twitter:hover {
@@ -107,6 +108,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerWrapper ul li.headerRight .discord {
@@ -118,6 +121,8 @@
   display: inline-block;
   vertical-align: middle;
   background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerWrapper ul li.headerRight .discord:hover {
@@ -128,6 +133,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerWrapper ul li.headerRight button {
