@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "fzdbsjw";
   background-color: var(--color-dark-grey);
-  background-image: url("./images/bg.png");
+  background-image: url("./images/bg.jpg");
   background-size: cover;
   background-position: center;
 }
