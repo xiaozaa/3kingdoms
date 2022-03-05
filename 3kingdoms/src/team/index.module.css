@@ -1,17 +1,16 @@
 .teamWrapper {
-  background-color: var(--color-dark-grey);
   height: 100vh;
   overflow-y: scroll;
 }
 
 .teamWrapper .teamContent {
   padding: 20px;
+  background-color: var(--color-dark-grey2);
 }
 
 .teamWrapper .teamContent .title {
   display: flex;
   flex-direction: row;
-  color: var(--color-light-grey);
   align-items: baseline;
 }
 

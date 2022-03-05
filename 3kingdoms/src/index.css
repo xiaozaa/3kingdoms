@@ -16,9 +16,9 @@
 body {
   margin: 0;
   font-family: "LiSu", "fzdbsjw";
-  background-color: var(--color-dark-grey);
   background-image: url("./images/bg.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  color: var(--color-brown) !important;
 }

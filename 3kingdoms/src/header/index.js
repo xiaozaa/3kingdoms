@@ -33,9 +33,10 @@ export const Header = () => {
                 <Dropdown.Item
                   key={lng}
                   style={{
-                    color: i18n.resolvedLanguage === lng ? "white" : "#9E3C3D",
+                    color:
+                      i18n.resolvedLanguage === lng ? "#d4cbc3" : "#9E3C3D",
                     backgroundColor:
-                      i18n.resolvedLanguage === lng ? "brown" : "white",
+                      i18n.resolvedLanguage === lng ? "#9E3C3D" : "#d4cbc3",
                   }}
                   onClick={() => {
                     i18n.changeLanguage(lng);

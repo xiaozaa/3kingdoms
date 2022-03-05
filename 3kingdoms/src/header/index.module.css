@@ -3,7 +3,6 @@
 .headerWrapper {
   background-color: var(--color-dark-grey-80);
   height: 50px;
-  color: white;
   font-weight: 600;
 }
 
@@ -48,7 +47,7 @@
 
 .headerWrapper ul li.logoImg a {
   text-decoration: none;
-  color: white;
+  color: var(--color-brown);
 }
 
 .headerWrapper ul li.headerRight img {
@@ -59,7 +58,7 @@
 
 .headerWrapper ul li.headerRight a {
   text-decoration: none;
-  color: white;
+  color: var(--color-brown);
 }
 
 .headerWrapper ul li.headerRight a:hover {
@@ -144,7 +143,7 @@
 
 .headerWrapper .headerRight .dropdownMenu {
   position: fixed !important;
-  background-color: var(--color-dark-grey);
+  padding: 0;
 }
 
 .headerWrapper .headerRight.icon {
