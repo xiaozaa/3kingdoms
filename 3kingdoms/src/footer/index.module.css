@@ -1,8 +1,6 @@
 @import url("../common/variables.css");
 
 .footerWrapper {
-  display: flex;
-  align-items: center;
   background-color: var(--color-dark-grey);
   height: 50px;
   color: white;
@@ -10,9 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
 .footerWrapper p {
   font-size: 14px;
   font-variant: small-caps;
+  margin: 0;
 }

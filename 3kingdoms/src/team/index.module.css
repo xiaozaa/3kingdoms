@@ -1,0 +1,32 @@
+.teamWrapper {
+  background-color: var(--color-dark-grey);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.teamWrapper .teamContent {
+  padding: 20px;
+}
+
+.teamWrapper .teamContent .title {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-light-grey);
+  align-items: baseline;
+}
+
+.teamWrapper .teamContent hr {
+  color: var(--color-light-grey);
+}
+
+.teamWrapper .teamContent .title h1 {
+  font-variant: small-caps;
+  margin-right: 5px;
+}
+
+.teamWrapper .teamContent .main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}

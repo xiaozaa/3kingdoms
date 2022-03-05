@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "fzdbsjw";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/fzdbsjw.ttf") format("truetype");
+  unicode-range: U+00-FF, U+980-9FF;
+}
+
+@font-face {
+  font-family: "LiSu";
+  font-weight: normal;
+  src: url("./font/chinese.ttf") format("truetype");
+  unicode-range: U+4E00-9FFF;
+}
+
 body {
   margin: 0;
-  font-family: "fzdbsjw";
+  font-family: "LiSu", "fzdbsjw";
   background-color: var(--color-dark-grey);
   background-image: url("./images/bg.webp");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }

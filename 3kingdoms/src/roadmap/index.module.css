@@ -1,0 +1,50 @@
+.roadmapWrapper {
+  background-image: url("../images/bg_rm.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainLeft,
+.mainRight {
+  width: 50%;
+  color: white;
+}
+
+.mainLeft {
+  padding: 20px 50px;
+}
+
+.mainRight img {
+  width: 80%;
+}
+
+.mainBanner img:hover {
+  cursor: pointer;
+}
+
+.mainBanner {
+  padding: 20px 0 50px;
+}
+
+.mainBanner img {
+  width: 20%;
+  margin: 0 5%;
+}
+
+@media screen and (max-width: 970px) {
+  .mainLeft {
+    width: 100%;
+  }
+
+  .mainRight {
+    display: none;
+  }
+}

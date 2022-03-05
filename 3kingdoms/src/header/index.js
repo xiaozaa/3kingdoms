@@ -21,7 +21,6 @@ export const Header = () => {
         <li className={styles.logoImg}>
           <a href="/">{t("home.threekingdoms")}</a>
         </li>
-
         {/* RIGHT */}
         {/* I18N */}
         <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
@@ -32,8 +31,11 @@ export const Header = () => {
             <Dropdown.Menu className={styles.dropdownMenu}>
               {Object.keys(lngs).map((lng) => (
                 <Dropdown.Item
+                  key={lng}
                   style={{
-                    color: i18n.resolvedLanguage === lng ? "#9E3C3D" : "white",
+                    color: i18n.resolvedLanguage === lng ? "white" : "#9E3C3D",
+                    backgroundColor:
+                      i18n.resolvedLanguage === lng ? "brown" : "white",
                   }}
                   onClick={() => {
                     i18n.changeLanguage(lng);
@@ -60,6 +62,14 @@ export const Header = () => {
             target="_blank"
             className={styles.twitter}
           ></a>
+        </li>
+        {/* Roadmap */}
+        <li className={`${styles.headerRight} ${styles.headerText}`}>
+          <a href={"/roadmap"}>{t("home.roadmap")}</a>
+        </li>
+        {/* Team */}
+        <li className={`${styles.headerRight} ${styles.headerText}`}>
+          <a href={"/team"}>{t("home.team")}</a>
         </li>
       </ul>
     </div>
