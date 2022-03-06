@@ -1,14 +1,7 @@
 @font-face {
-  font-family: "fzdbsjw";
-  font-weight: normal;
-  src: url("./font/fzdbsjw.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "fzdbsjw";
+  font-family: "lishu";
   font-weight: normal;
   src: url("./font/chinese.ttf") format("truetype");
-  unicode-range: U+4E00, U+9FFF;
 }
 
 body {
