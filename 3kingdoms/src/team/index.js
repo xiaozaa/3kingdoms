@@ -6,8 +6,6 @@ import { Footer } from "../footer";
 
 import { FlipCard } from "./flipCard";
 
-import front1 from "../images/cards/2_front.png";
-import back1 from "../images/cards/1_back.png";
 import huaguang_front from "../images/cards/huaguang_front.png";
 import huaguang_back from "../images/cards/huaguang_back.png";
 import martket_front from "../images/cards/martket_front.png";
@@ -18,6 +16,12 @@ import founder_front from "../images/cards/founder_front.png";
 import founder_back from "../images/cards/founder_back.png";
 import catchon_front from "../images/cards/catchon_front.png";
 import catchon_back from "../images/cards/catchon_back.png";
+import yao_front from "../images/cards/yao_front.png";
+import yao_back from "../images/cards/yao_back.png";
+import wy_front from "../images/cards/wy_front.png";
+import wy_back from "../images/cards/wy_back.png";
+import bad_front from "../images/cards/bad_front.png";
+import bad_back from "../images/cards/bad_back.png";
 
 import styles from "./index.module.css";
 
@@ -36,8 +40,15 @@ export const Team = () => {
         <div className={styles.main}>
           <FlipCard
             props={{
-              front: front1,
-              back: back1,
+              front: founder_front,
+              back: founder_back,
+              isFlipped: false,
+            }}
+          />
+          <FlipCard
+            props={{
+              front: bad_front,
+              back: bad_back,
               isFlipped: false,
             }}
           />
@@ -45,6 +56,20 @@ export const Team = () => {
             props={{
               front: huaguang_front,
               back: huaguang_back,
+              isFlipped: false,
+            }}
+          />
+          <FlipCard
+            props={{
+              front: wy_front,
+              back: wy_back,
+              isFlipped: false,
+            }}
+          />
+          <FlipCard
+            props={{
+              front: yao_front,
+              back: yao_back,
               isFlipped: false,
             }}
           />
@@ -62,45 +87,11 @@ export const Team = () => {
               isFlipped: false,
             }}
           />
-          <FlipCard
-            props={{
-              front: founder_front,
-              back: founder_back,
-              isFlipped: false,
-            }}
-          />
+
           <FlipCard
             props={{
               front: catchon_front,
               back: catchon_back,
-              isFlipped: false,
-            }}
-          />
-          <FlipCard
-            props={{
-              front: front1,
-              back: back1,
-              isFlipped: false,
-            }}
-          />
-          <FlipCard
-            props={{
-              front: front1,
-              back: back1,
-              isFlipped: false,
-            }}
-          />
-          <FlipCard
-            props={{
-              front: front1,
-              back: back1,
-              isFlipped: false,
-            }}
-          />
-          <FlipCard
-            props={{
-              front: front1,
-              back: back1,
               isFlipped: false,
             }}
           />

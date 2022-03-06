@@ -4,9 +4,11 @@ import { Header } from "../header";
 import { Content } from "../content";
 import { Footer } from "../footer";
 
+import styles from "./index.module.css";
+
 export const Home = () => {
   return (
-    <div>
+    <div className={styles.homeWrapper}>
       <Header />
       <Content />
       <Footer />

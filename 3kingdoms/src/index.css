@@ -1,21 +1,18 @@
 @font-face {
   font-family: "fzdbsjw";
-  font-style: normal;
   font-weight: normal;
   src: url("./font/fzdbsjw.ttf") format("truetype");
-  unicode-range: U+00-FF, U+980-9FF;
 }
 
 @font-face {
-  font-family: "LiSu";
+  font-family: "fzdbsjw";
   font-weight: normal;
   src: url("./font/chinese.ttf") format("truetype");
-  unicode-range: U+4E00-9FFF;
+  unicode-range: U+4E00, U+9FFF;
 }
 
 body {
   margin: 0;
-  font-family: "LiSu", "fzdbsjw";
   background-image: url("./images/bg.webp");
   background-size: cover;
   background-position: center;

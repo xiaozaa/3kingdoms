@@ -1,11 +1,14 @@
 .teamWrapper {
   height: 100vh;
   overflow-y: scroll;
+  font-family: "fzdbsjw";
 }
 
 .teamWrapper .teamContent {
   padding: 20px;
   background-color: var(--color-dark-grey2);
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .teamWrapper .teamContent .title {
