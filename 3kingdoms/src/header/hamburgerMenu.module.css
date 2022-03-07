@@ -1,0 +1,8 @@
+.menuWrapper a {
+  color: var(--color-brown);
+  text-decoration: none;
+}
+
+.menuWrapper a:hover {
+  color: var(--color-dark-red);
+}

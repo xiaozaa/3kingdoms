@@ -164,3 +164,17 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+.mobileWrapper {
+  display: none;
+}
+
+@media screen and (max-width: 585px) {
+  .webIcon {
+    display: none !important;
+  }
+
+  .mobileWrapper {
+    display: block;
+  }
+}

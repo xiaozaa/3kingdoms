@@ -11,6 +11,7 @@ module.exports = {
         team: "Team",
         general: "General",
         battle: "Battle",
+        home: "Home",
       },
       roadmap: {
         p1_1: "Phase 1",
@@ -49,6 +50,7 @@ module.exports = {
         team: "组员",
         general: "常规",
         battle: "掰头",
+        home: "主页",
       },
       roadmap: {
         p1_1: "初出茅庐",
