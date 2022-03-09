@@ -16,13 +16,13 @@ export const HamburgerMenu = () => {
     bmBurgerBars: {
       background: "var(--color-brown)",
     },
-    bmCrossButton: {
-      height: "24px",
-      width: "24px",
-    },
-    bmCross: {
-      background: "var(--color-brown)",
-    },
+    // bmCrossButton: {
+    //   height: "24px",
+    //   width: "24px",
+    // },
+    // bmCross: {
+    //   background: "var(--color-brown)",
+    // },
     bmMenu: {
       background: "var(--color-dark-grey)",
       padding: "20px",
