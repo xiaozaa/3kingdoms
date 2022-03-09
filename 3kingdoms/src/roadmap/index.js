@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Header } from "../header";
 import { Footer } from "../footer";
 
-import xuShengImg from "../images/xusheng.png";
+import xuShengImg from "../images/xusheng.webp";
 
 import phase1 from "../images/phases/phase1.png";
 import phase1_click from "../images/phases/phase1_click.png";
@@ -54,7 +54,7 @@ export const Roadmap = () => {
                 <p>{t("roadmap.p1_5")}</p>
                 <p>{t("roadmap.p1_6")}</p>
                 <p>{t("roadmap.p1_7")}</p>
-                <p>{t("roadmap.p1_8")}</p>
+                {/* <p>{t("roadmap.p1_8")}</p> */}
               </div>
             )}
 

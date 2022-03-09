@@ -1,7 +1,7 @@
 .teamWrapper {
   height: 100vh;
   overflow-y: scroll;
-  font-family: "lishu";
+  font-family: Georgia,'Microsoft YaHei',simsun,serif;
 }
 
 .teamWrapper .teamContent {
