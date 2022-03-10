@@ -8,10 +8,10 @@ export const HamburgerMenu = () => {
   var styles = {
     bmBurgerButton: {
       position: "fixed",
-      width: "36px",
-      height: "30px",
+      width: "25px",
+      height: "20px",
       left: "20px",
-      top: "10px",
+      top: "16px",
     },
     bmBurgerBars: {
       background: "var(--color-brown)",

@@ -1,13 +1,13 @@
 .teamWrapper {
   height: 100vh;
   overflow-y: scroll;
-  font-family: Georgia,'Microsoft YaHei',simsun,serif;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
 }
 
 .teamWrapper .teamContent {
   padding: 20px;
   background-color: var(--color-dark-grey2);
-  height: 100vh;
+  height: calc(100vh - 140px);
   overflow-y: scroll;
 }
 
