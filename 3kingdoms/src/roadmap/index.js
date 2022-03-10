@@ -51,10 +51,6 @@ export const Roadmap = () => {
                 <p>{t("roadmap.p1_2")}</p>
                 <p>{t("roadmap.p1_3")}</p>
                 <p>{t("roadmap.p1_4")} </p>
-                <p>{t("roadmap.p1_5")}</p>
-                <p>{t("roadmap.p1_6")}</p>
-                <p>{t("roadmap.p1_7")}</p>
-                {/* <p>{t("roadmap.p1_8")}</p> */}
               </div>
             )}
 
@@ -65,8 +61,6 @@ export const Roadmap = () => {
                 <p>{t("roadmap.p2_3")}</p>
                 <p>{t("roadmap.p2_4")} </p>
                 <p>{t("roadmap.p2_5")}</p>
-                <p>{t("roadmap.p2_6")}</p>
-                <p>{t("roadmap.p2_7")}</p>
               </div>
             )}
             {phase === "phase3" && (
@@ -75,8 +69,6 @@ export const Roadmap = () => {
                 <p>{t("roadmap.p3_2")}</p>
                 <p>{t("roadmap.p3_3")}</p>
                 <p>{t("roadmap.p3_4")} </p>
-                <p>{t("roadmap.p3_5")}</p>
-                <p>{t("roadmap.p3_6")}</p>
               </div>
             )}
           </div>
