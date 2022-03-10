@@ -1,0 +1,56 @@
+.roadmapWrapper {
+  background-image: url("../images/bg_rm.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 140px);
+  overflow-y: scroll;
+}
+
+.mainLeft,
+.mainRight {
+  width: 50%;
+}
+
+.mainLeft {
+  padding: 20px 50px 100px;
+}
+
+.mainRight img {
+  width: 80%;
+}
+
+.mainBanner img:hover {
+  cursor: pointer;
+}
+
+.mainBanner {
+  padding: 20px 0 50px;
+}
+
+.mainBanner img {
+  width: 20%;
+  margin: 0 5%;
+}
+
+@media screen and (max-width: 970px) {
+  .mainLeft {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 90px;
+    overflow-y: scroll;
+  }
+
+  .mainRight {
+    display: none;
+  }
+}

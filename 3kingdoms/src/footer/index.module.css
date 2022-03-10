@@ -1,18 +1,103 @@
 @import url("../common/variables.css");
 
 .footerWrapper {
-  display: flex;
-  align-items: center;
-  background-color: var(--color-dark-grey);
-  height: 50px;
-  color: white;
   font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
 .footerWrapper p {
   font-size: 14px;
   font-variant: small-caps;
+  margin: 0;
+}
+
+.socialMediaWrapper {
+  background-color: var(--color-dark-grey);
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50px;
+}
+.socialMediaWrapper ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px;
+  height: 50px;
+}
+
+ul li {
+  float: left;
+  min-width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+ul li .twitter {
+  width: 70px;
+  height: 25px;
+  background-image: url("../images/twitter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li .twitter:hover {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/twitter_click.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li .discord {
+  width: 70px;
+  height: 25px;
+  background-image: url("../images/discord.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li .discord:hover {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  background-image: url("../images/discord_click.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+  width: 100%;
+  background-color: var(--color-dark-grey3);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

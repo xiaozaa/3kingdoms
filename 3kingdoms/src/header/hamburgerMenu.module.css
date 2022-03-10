@@ -1,0 +1,18 @@
+/* .menuWrapper :active{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
+} */
+
+.menuWrapper a {
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  transition: opacity 1s, visibility 0s 1s;
+  color: var(--color-brown);
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.menuWrapper a:hover {
+  color: var(--color-dark-red);
+}

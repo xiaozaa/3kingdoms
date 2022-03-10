@@ -3,6 +3,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useTranslation } from "react-i18next";
 
 import languageImg from "../images/language.png";
+import { HamburgerMenu } from "./hamburgerMenu";
 
 import styles from "./index.module.css";
 
@@ -18,10 +19,9 @@ export const Header = () => {
     <div className={styles.headerWrapper}>
       <ul>
         {/* LEFT */}
-        <li className={styles.logoImg}>
+        <li className={`${styles.logoImg} ${styles.webIcon}`}>
           <a href="/">{t("home.threekingdoms")}</a>
         </li>
-
         {/* RIGHT */}
         {/* I18N */}
         <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
@@ -32,8 +32,12 @@ export const Header = () => {
             <Dropdown.Menu className={styles.dropdownMenu}>
               {Object.keys(lngs).map((lng) => (
                 <Dropdown.Item
+                  key={lng}
                   style={{
-                    color: i18n.resolvedLanguage === lng ? "#9E3C3D" : "white",
+                    color:
+                      i18n.resolvedLanguage === lng ? "#d4cbc3" : "#9E3C3D",
+                    backgroundColor:
+                      i18n.resolvedLanguage === lng ? "#9E3C3D" : "#d4cbc3",
                   }}
                   onClick={() => {
                     i18n.changeLanguage(lng);
@@ -46,7 +50,9 @@ export const Header = () => {
           </Dropdown>
         </li>
         {/* discord */}
-        <li className={`${styles.headerRight} ${styles.icon}`}>
+        <li
+          className={`${styles.headerRight} ${styles.icon} ${styles.webIcon}`}
+        >
           <a
             href={"https://discord.com/invite/2HGQ7FdJDu"}
             target="_blank"
@@ -54,14 +60,32 @@ export const Header = () => {
           ></a>
         </li>
         {/* twitter */}
-        <li className={`${styles.headerRight} ${styles.icon}`}>
+        <li
+          className={`${styles.headerRight} ${styles.icon} ${styles.webIcon}`}
+        >
           <a
             href={"https://twitter.com/3KingdomsClub"}
             target="_blank"
             className={styles.twitter}
           ></a>
         </li>
+        {/* Roadmap */}
+        <li
+          className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
+        >
+          <a href={"/roadmap"}>{t("home.roadmap")}</a>
+        </li>
+        {/* Team */}
+        <li
+          className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
+        >
+          <a href={"/team"}>{t("home.team")}</a>
+        </li>
       </ul>
+
+      <div className={styles.mobileWrapper}>
+        <HamburgerMenu />
+      </div>
     </div>
   );
 };

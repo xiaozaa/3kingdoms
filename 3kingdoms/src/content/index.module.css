@@ -1,7 +1,7 @@
 .contentWrapper {
   width: 100vw;
-  color: white;
   text-align: center;
+  font-family: Georgia,'Microsoft YaHei',simsun,serif;
 }
 
 .contentWrapper .banner {

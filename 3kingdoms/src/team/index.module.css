@@ -1,0 +1,34 @@
+.teamWrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+}
+
+.teamWrapper .teamContent {
+  padding: 20px;
+  background-color: var(--color-dark-grey2);
+  height: calc(100vh - 140px);
+  overflow-y: scroll;
+}
+
+.teamWrapper .teamContent .title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.teamWrapper .teamContent hr {
+  color: var(--color-light-grey);
+}
+
+.teamWrapper .teamContent .title h1 {
+  font-variant: small-caps;
+  margin-right: 5px;
+}
+
+.teamWrapper .teamContent .main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}

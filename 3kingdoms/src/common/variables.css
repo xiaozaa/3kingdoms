@@ -1,9 +1,13 @@
 :root {
-  --color-dark-grey: #1f1f1f;
-  --color-dark-grey-80: rgb(31,31,31,0.8);
+  --color-dark-grey: #1f1e1d;
+  --color-dark-grey2: #1a1a1a;
+  --color-dark-grey3: #131313;
+  --color-dark-grey-80: rgb(31, 31, 31, 0.8);
   --color-border-grey: #36454f;
-  --color-border-grey-80: rgba(54,69,79,0.8);
+  --color-border-grey-80: rgba(54, 69, 79, 0.8);
   --color-light-grey: #d6d6d6;
   --color-green: #4dedb3;
   --text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  --color-dark-red: #9e3c3d;
+  --color-brown: #d4cbc3;
 }

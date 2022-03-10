@@ -3,8 +3,8 @@
 .headerWrapper {
   background-color: var(--color-dark-grey-80);
   height: 50px;
-  color: white;
   font-weight: 600;
+  font-family: Georgia,'Microsoft YaHei',simsun,serif;
 }
 
 .headerWrapper ul {
@@ -48,7 +48,7 @@
 
 .headerWrapper ul li.logoImg a {
   text-decoration: none;
-  color: white;
+  color: var(--color-brown);
 }
 
 .headerWrapper ul li.headerRight img {
@@ -59,7 +59,7 @@
 
 .headerWrapper ul li.headerRight a {
   text-decoration: none;
-  color: white;
+  color: var(--color-brown);
 }
 
 .headerWrapper ul li.headerRight a:hover {
@@ -144,7 +144,7 @@
 
 .headerWrapper .headerRight .dropdownMenu {
   position: fixed !important;
-  background-color: var(--color-dark-grey);
+  padding: 0;
 }
 
 .headerWrapper .headerRight.icon {
@@ -162,4 +162,19 @@
 .headerWrapper .headerRight.headerText {
   margin-right: 15px;
   font-weight: 400;
+  font-size: 16px;
+}
+
+.mobileWrapper {
+  display: none;
+}
+
+@media screen and (max-width: 585px) {
+  .webIcon {
+    display: none !important;
+  }
+
+  .mobileWrapper {
+    display: block;
+  }
 }

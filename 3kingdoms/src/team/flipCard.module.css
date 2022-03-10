@@ -1,0 +1,39 @@
+.flipCardsWrapper {
+  width: 20%;
+  display: inline-block;
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+
+.flipCardsWrapper img {
+  width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .flipCardsWrapper {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .flipCardsWrapper {
+    width: 40%;
+    text-align: center;
+  }
+
+  .flipCardsWrapper img {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .flipCardsWrapper {
+    width: 80%;
+    text-align: center;
+  }
+
+  .flipCardsWrapper img {
+    width: 250px;
+  }
+}
