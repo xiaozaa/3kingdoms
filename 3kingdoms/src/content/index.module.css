@@ -1,7 +1,7 @@
 .contentWrapper {
   width: 100vw;
   text-align: center;
-  font-family: Georgia,'Microsoft YaHei',simsun,serif;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
 }
 
 .contentWrapper .banner {
@@ -25,5 +25,9 @@
 @media screen and (max-width: 657px) {
   .contentWrapper .banner .title {
     font-size: 27px;
+    line-height: 22px;
+    height: 209px;
+    width: 100%;
+    padding: 88px 0;
   }
 }
