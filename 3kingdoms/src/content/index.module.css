@@ -22,6 +22,22 @@
   padding: 63px 111px 76px;
 }
 
+.contentWrapper .banner img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+
+.contentWrapper .banner p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 72px;
+  margin-top: -300px;
+}
+
 @media screen and (max-width: 657px) {
   .contentWrapper .banner .title {
     font-size: 27px;

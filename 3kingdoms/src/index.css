@@ -1,14 +1,11 @@
 @font-face {
-  font-family: Georgia,'Microsoft YaHei',simsun,serif;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
   font-weight: normal;
   src: url("./font/chinese.ttf") format("truetype");
 }
 
 body {
   margin: 0;
-  background-image: url("./images/bg.webp");
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
   color: var(--color-brown) !important;
 }

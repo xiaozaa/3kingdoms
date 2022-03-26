@@ -8,14 +8,16 @@ import "./i18n";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      isLoading: true,
+    };
   }
 
   render() {
     return (
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home data={this} />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/team" element={<Team />} />
         </Routes>

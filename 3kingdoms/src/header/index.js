@@ -19,12 +19,12 @@ export const Header = () => {
     <div className={styles.headerWrapper}>
       <ul>
         {/* LEFT */}
-        <li className={`${styles.logoImg} ${styles.webIcon}`}>
+        {/* <li className={`${styles.logoImg} ${styles.webIcon}`}>
           <a href="/">{t("home.threekingdoms")}</a>
-        </li>
+        </li> */}
         {/* RIGHT */}
         {/* I18N */}
-        <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
+        {/* <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
           <Dropdown>
             <Dropdown.Toggle>
               <img src={languageImg} />
@@ -48,7 +48,7 @@ export const Header = () => {
               ))}
             </Dropdown.Menu>
           </Dropdown>
-        </li>
+        </li> */}
         {/* discord */}
         <li
           className={`${styles.headerRight} ${styles.icon} ${styles.webIcon}`}
