@@ -1,3 +1,5 @@
+@import url("../common/variables.css");
+
 .contentWrapper {
   width: 100vw;
   text-align: center;
@@ -46,5 +48,45 @@
     height: 209px;
     width: 100%;
     padding: 88px 0;
+  }
+}
+
+.threeKingdoms {
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 72px;
+  margin-top: -300px;
+  z-index: 2;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fd7907;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fd7907;
   }
 }

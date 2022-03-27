@@ -14,7 +14,7 @@ export const Content = () => {
       <div className={styles.banner}>
         {/* <div className={styles.title}>{t("home.comingsoon")}</div> */}
         <img src={sanGuoImg} />
-        <p>THREE KINGDOMS</p>
+        <div className={styles.threeKingdoms}>THREE KINGDOMS</div>
         <Fire />
       </div>
     </div>
