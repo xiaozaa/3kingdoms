@@ -13,9 +13,12 @@ export const Content = () => {
     <div className={styles.contentWrapper}>
       <div className={styles.banner}>
         {/* <div className={styles.title}>{t("home.comingsoon")}</div> */}
-        <img src={sanGuoImg} />
-        <div className={styles.threeKingdoms}>THREE KINGDOMS</div>
-        <Fire />
+        <div className={styles.centerWrapper}>
+          <img src={sanGuoImg} />
+          <div className={styles.threeKingdoms}>THREE KINGDOMS</div>
+          <Fire />
+        </div>
+        <div className={styles.subTitle}>4000 Legendary NFTs</div>
       </div>
     </div>
   );

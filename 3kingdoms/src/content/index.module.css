@@ -14,6 +14,12 @@
   height: calc(100vh - 100px);
 }
 
+.contentWrapper .centerWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contentWrapper .banner .title {
   font-size: 72px;
   font-weight: 600;
@@ -22,6 +28,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 63px 111px 76px;
+}
+
+.contentWrapper .subTitle {
+  font-size: 28px;
+  color: var(--color-dark-grey);
+  margin-top: 150px;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+  letter-spacing: 2px;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
 }
 
 .contentWrapper .banner img {
@@ -51,6 +69,23 @@
   }
 }
 
+@media screen and (max-width: 733px) {
+  .threeKingdoms {
+    font-size: 34px !important;
+    letter-spacing: 5px !important;
+  }
+
+  .threeKingdoms:hover,
+  .contentWrapper .subTitle:hover {
+    cursor: default;
+  }
+
+  .contentWrapper .subTitle {
+    font-size: 24px !important;
+    letter-spacing: 2px !important;
+  }
+}
+
 .threeKingdoms {
   -webkit-background-clip: text;
   background-clip: text;
@@ -62,8 +97,10 @@
   margin-top: -300px;
   z-index: 2;
   letter-spacing: 12px;
-  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
-          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
 }
 @-webkit-keyframes reveal {
   80% {
