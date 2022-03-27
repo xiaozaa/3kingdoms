@@ -1,11 +1,12 @@
 .fire {
-  font-size: 20px;
+  font-size: 24px;
   filter: blur(0.02em);
   -webkit-filter: blur(0.02em);
-  margin: 3em auto 0 auto;
+  margin: -223px auto 0 auto;
   position: relative;
   width: 10em;
   height: 12em;
+  z-index: 1;
 }
 
 .particle {
