@@ -3,6 +3,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useTranslation } from "react-i18next";
 
 import languageImg from "../images/language.png";
+import alcolholImg from "../images/jiu.webp";
 import { HamburgerMenu } from "./hamburgerMenu";
 
 import styles from "./index.module.css";
@@ -19,9 +20,12 @@ export const Header = () => {
     <div className={styles.headerWrapper}>
       <ul>
         {/* LEFT */}
-        {/* <li className={`${styles.logoImg} ${styles.webIcon}`}>
-          <a href="/">{t("home.threekingdoms")}</a>
-        </li> */}
+        <li className={`${styles.logoImg} ${styles.webIcon}`}>
+          {/* <a href="/">{t("home.threekingdoms")}</a> */}
+          <a href="/">
+            <img src={alcolholImg} />
+          </a>
+        </li>
         {/* RIGHT */}
         {/* I18N */}
         {/* <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>

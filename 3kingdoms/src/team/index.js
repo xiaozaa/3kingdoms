@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Header } from "../header";
@@ -27,6 +27,22 @@ import styles from "./index.module.css";
 
 export const Team = () => {
   const { t } = useTranslation();
+
+  const authenticate = () => {
+    return new Promise((resolve) => setTimeout(resolve, 1000));
+  };
+
+  useState(() => {
+    authenticate().then(() => {
+      const ele = document.getElementById("ipl-progress-indicator");
+      if (ele) {
+        ele.classList.add("available");
+        setTimeout(() => {
+          ele.outerHTML = "";
+        }, 1000);
+      }
+    });
+  });
 
   return (
     <div className={styles.teamWrapper}>

@@ -19,6 +19,22 @@ export const Roadmap = () => {
   const [phase, setPhase] = useState("phase1");
   const { t } = useTranslation();
 
+  const authenticate = () => {
+    return new Promise((resolve) => setTimeout(resolve, 1000));
+  };
+
+  useState(() => {
+    authenticate().then(() => {
+      const ele = document.getElementById("ipl-progress-indicator");
+      if (ele) {
+        ele.classList.add("available");
+        setTimeout(() => {
+          ele.outerHTML = "";
+        }, 1000);
+      }
+    });
+  });
+
   return (
     <div className={styles.roadmapWrapper}>
       <Header />
