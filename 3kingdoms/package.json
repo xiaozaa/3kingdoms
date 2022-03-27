@@ -28,6 +28,8 @@
     "react-router-dom": "^6.2.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
+    "react-tsparticles": "^1.42.4",
+    "tsparticles": "^1.42.4",
     "web-vitals": "^2.1.4",
     "web3": "^1.7.0",
     "web3modal": "^1.9.5",

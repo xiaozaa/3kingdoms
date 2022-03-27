@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Header } from "../header";
 import { Content } from "../content";
 import { Footer } from "../footer";
+import { ParticleBackground } from "../content/particleBackground";
 
 import styles from "./index.module.css";
 
@@ -30,6 +31,7 @@ export class Home extends Component {
   render() {
     return (
       <div className={styles.HomeWrapper}>
+        <ParticleBackground />
         <Header />
         <Content />
         <Footer />
