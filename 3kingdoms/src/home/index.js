@@ -31,10 +31,10 @@ export class Home extends Component {
   render() {
     return (
       <div className={styles.HomeWrapper}>
-        <ParticleBackground />
         <Header />
         <Content />
         <Footer />
+        <ParticleBackground />
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import Particles from "react-tsparticles";
 
+import styles from "./particleBackground.module.css";
 
 export const ParticleBackground = () => {
     return (
-        <div>
+        <div className={styles.particle}>
             <Particles
                 options={{
                     "particles": {
@@ -74,7 +75,7 @@ export const ParticleBackground = () => {
                             }
                         }
                     }, "interactivity": {
-                        "detectsOn": "canvas",
+                        "detectsOn": "window",
                         "events": {
                             "onhover": {
                                 "enable": true,
