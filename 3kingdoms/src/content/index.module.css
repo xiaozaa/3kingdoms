@@ -33,7 +33,6 @@
 .contentWrapper .subTitle {
   font-size: 28px;
   color: var(--color-dark-grey);
-  margin-top: 150px;
   font-family: Georgia, "Microsoft YaHei", simsun, serif;
   letter-spacing: 2px;
   -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
