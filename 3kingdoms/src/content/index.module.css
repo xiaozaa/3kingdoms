@@ -66,6 +66,13 @@
     width: 100%;
     padding: 88px 0;
   }
+  .contentWrapper .banner img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 733px) {

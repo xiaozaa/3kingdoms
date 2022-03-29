@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { Header } from "../header";
 import { Footer } from "../footer";
+import { ParticleBackground } from "../content/particleBackground";
 
 import phase1 from "../images/phases/phase1.png";
 import phase1_click from "../images/phases/phase1_click.png";
@@ -11,9 +12,9 @@ import phase2_click from "../images/phases/phase2_click.png";
 import phase3 from "../images/phases/phase3.png";
 import phase3_click from "../images/phases/phase3_click.png";
 
-import rd1 from "../images/roadmap/mk1 3.png";
-import rd2 from "../images/roadmap/mk2 3.png";
-import rd3 from "../images/roadmap/mk3 3.png";
+import rd1 from "../images/roadmap/mk1 2.png";
+import rd2 from "../images/roadmap/mk2 2.png";
+import rd3 from "../images/roadmap/mk3 2.png";
 
 import styles from "./index.module.css";
 
@@ -75,9 +76,8 @@ export const Roadmap = () => {
         <div className={styles.mainMiddle}></div>
         <div className={styles.mainRight}>
           <div
-            className={`${styles.text} ${
-              phase === "phase1" ? styles.active : ""
-            }`}
+            className={`${styles.text} ${phase === "phase1" ? styles.active : ""
+              }`}
           >
             <div>
               <h2>初出茅庐</h2>
@@ -90,9 +90,8 @@ export const Roadmap = () => {
           </div>
 
           <div
-            className={`${styles.text} ${
-              phase === "phase2" ? styles.active : ""
-            }`}
+            className={`${styles.text} ${phase === "phase2" ? styles.active : ""
+              }`}
           >
             <div>
               <h2>群雄割据</h2>
@@ -106,9 +105,8 @@ export const Roadmap = () => {
           </div>
 
           <div
-            className={`${styles.text} ${
-              phase === "phase3" ? styles.active : ""
-            }`}
+            className={`${styles.text} ${phase === "phase3" ? styles.active : ""
+              }`}
           >
             <div>
               <h2>壹齐天下</h2>
@@ -122,6 +120,7 @@ export const Roadmap = () => {
         </div>
       </div>
       <Footer />
+      <ParticleBackground />
     </div>
   );
 };

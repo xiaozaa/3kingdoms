@@ -69,10 +69,10 @@
 
 .mainRight .text .textImg {
   position: absolute;
-  top: 145px;
-  width: 200px;
-  height: 200px;
-  left: 200px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  left: 150px;
 }
 
 .mainRight img {
@@ -123,10 +123,4 @@
     font-size: 14px;
   }
 
-  .mainRight .text .textImg {
-    width: 150px;
-    top: 213px;
-    position: absolute;
-    left: 30px;
-  }
 }
