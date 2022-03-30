@@ -6,24 +6,33 @@
 
 .teamWrapper .teamContent {
   padding: 20px;
-  background-color: var(--color-dark-grey2);
+  background-image: url("../images/new-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: calc(100vh - 140px);
   overflow-y: scroll;
 }
 
 .teamWrapper .teamContent .title {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: baseline;
+  align-items: center;
 }
 
 .teamWrapper .teamContent hr {
-  color: var(--color-light-grey);
+  color: var(--color-brown);
 }
 
 .teamWrapper .teamContent .title h1 {
   font-variant: small-caps;
   margin-right: 5px;
+  color: var(--color-brown);
+}
+
+.teamWrapper .teamContent .title p a {
+  color: var(--color-brown);
 }
 
 .teamWrapper .teamContent .main {

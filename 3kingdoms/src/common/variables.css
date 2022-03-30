@@ -10,4 +10,9 @@
   --text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   --color-dark-red: #672f30;
   --color-brown: #d4cbc3;
+  --card-height: 40vw;
+  --card-margin: 4vw;
+  --card-top-offset: 40px;
+  --numcards: 4;
+  --outline-width: 0px;
 }

@@ -5,8 +5,9 @@ module.exports = {
         threekingdoms: "THREE KINGDOMS NFT",
         copyright: "Copyright 2022 three kingdoms club",
         comingsoon: "Coming Soon",
-        bigGuysGather: "Team members",
-        itsAllYou: "Heros assemble in the three kingdoms of web3",
+        bigGuysGather: "Meet the team",
+        itsAllYou:
+          "If you want to know more about the Three Kingdoms nft team members, please check out here. ",
         roadmap: "Roadmap",
         team: "Team",
         general: "General",

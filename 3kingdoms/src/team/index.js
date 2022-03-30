@@ -50,7 +50,10 @@ export const Team = () => {
       <div className={styles.teamContent}>
         <div className={styles.title}>
           <h1>{t("home.bigGuysGather")}</h1>
-          <p>{t("home.itsAllYou")}</p>
+          <p>
+            If you want to know more about the Three Kingdoms nft team members,
+            please check out <a href={"#"}>here</a>.{" "}
+          </p>
         </div>
         <hr />
         <div className={styles.main}>

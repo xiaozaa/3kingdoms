@@ -1,8 +1,6 @@
 import React from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import { useTranslation } from "react-i18next";
 
-import languageImg from "../images/language.png";
 import alcolholImg from "../images/jiu.webp";
 import { HamburgerMenu } from "./hamburgerMenu";
 
@@ -84,6 +82,12 @@ export const Header = () => {
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
           <a href={"/team"}>{t("home.team")}</a>
+        </li>
+        {/* Preview */}
+        <li
+          className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
+        >
+          <a href={"/preview"}>Preview</a>
         </li>
       </ul>
 
