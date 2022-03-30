@@ -13,7 +13,7 @@ export class Home extends Component {
   }
 
   authenticate() {
-    return new Promise((resolve) => setTimeout(resolve, 2000));
+    return new Promise((resolve) => setTimeout(resolve, 1500));
   }
 
   componentDidMount() {
@@ -23,7 +23,7 @@ export class Home extends Component {
         ele.classList.add("available");
         setTimeout(() => {
           ele.outerHTML = "";
-        }, 2000);
+        }, 1000);
       }
     });
   }
