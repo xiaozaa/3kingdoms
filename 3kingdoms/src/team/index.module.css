@@ -31,8 +31,18 @@
   color: var(--color-brown);
 }
 
-.teamWrapper .teamContent .title p a {
-  color: var(--color-brown);
+.teamWrapper .teamContent .title p {
+  width: 50%;
+  text-align: center;
+  color: #a6a09a;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+}
+
+.teamWrapper .teamContent .title a {
+  width: 50%;
+  text-align: center;
+  color: #a6a09a;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
 }
 
 .teamWrapper .teamContent .main {
