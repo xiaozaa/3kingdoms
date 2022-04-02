@@ -1,6 +1,10 @@
 .previewWrapper {
   position: absolute;
-  margin-left: 10vw;
+  padding: 0 10vw;
+  background-image: url("../images/new-bg.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
 }
 
 .cards {
@@ -86,13 +90,20 @@
 header,
 main {
   width: 80vw;
+}
+
+main {
+  margin: 8vh auto;
+}
+header {
+  height: calc(100vh - 140px);
+  display: grid;
+  place-items: center;
   margin: 0 auto;
 }
 
-header {
-  height: 100vh;
-  display: grid;
-  place-items: center;
+header h1 {
+  color: var(--color-brown);
 }
 
 .card {
@@ -148,7 +159,6 @@ h2 {
 }
 
 p {
-  font-family: sans-serif;
   font-weight: 300;
   line-height: 1.42;
 }

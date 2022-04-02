@@ -13,6 +13,7 @@ module.exports = {
         general: "General",
         battle: "Battle",
         home: "Home",
+        preview: "Preview",
       },
       roadmap: {
         p1_1: "Phase 1",

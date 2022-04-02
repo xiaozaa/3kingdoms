@@ -36,6 +36,7 @@ export const HamburgerMenu = () => {
       <a id="home" href="/">
         {t("home.home")}
       </a>
+      <a href="/preview"> {t("home.preview")}</a>
       <a href="/team">{t("home.team")}</a>
       <a href="/roadmap"> {t("home.roadmap")}</a>
     </Menu>

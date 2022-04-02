@@ -87,7 +87,7 @@ export const Header = () => {
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/preview"}>Preview</a>
+          <a href={"/preview"}>{t("home.preview")}</a>
         </li>
       </ul>
 
