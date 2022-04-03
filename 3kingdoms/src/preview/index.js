@@ -6,9 +6,14 @@ import { Footer } from "../footer";
 import { ParticleBackground } from "../content/particleBackground";
 import styles from "./index.module.css";
 
+import wei from "../images/preview/wei.webp";
+import shu from "../images/preview/shu.webp";
+import wu from "../images/preview/wu.webp";
+import qun from "../images/preview/qun.webp";
+
 export const Preview = () => {
   const authenticate = () => {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
+    return new Promise((resolve) => setTimeout(resolve, 500));
   };
 
   useState(() => {
@@ -30,7 +35,7 @@ export const Preview = () => {
         <header>
           <div>
             <h1>MEET YOUR HEROS</h1>
-            <p>👇 Scroll down to see the effect.</p>
+            <p>👇 Scroll down to choose your kingdom.</p>
           </div>
         </header>
         <main>
@@ -38,23 +43,23 @@ export const Preview = () => {
             <li className={`${styles.card} ${styles.card_1}`}>
               <div className={styles.card__content}>
                 <div>
-                  <h2>Card One</h2>
+                  <h2>WEI</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    One of the three major states in the Three Kingdoms period.
                   </p>
                   <p>
                     <a
                       href="#top"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
-                      Read more
+                      Join Wei Now
                     </a>
                   </p>
                 </div>
                 <figure>
                   <img
-                    src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg"
-                    alt="Image description"
+                    src={wei}
+                    alt="Wei"
                   />
                 </figure>
               </div>
@@ -62,23 +67,23 @@ export const Preview = () => {
             <li className={`${styles.card} ${styles.card_2}`}>
               <div className={styles.card__content}>
                 <div>
-                  <h2>Card Two</h2>
+                  <h2>SHU</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    One of the three major states in the Three Kingdoms period.
                   </p>
                   <p>
                     <a
                       href="#top"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
-                      Read more
+                      Join Shu Now
                     </a>
                   </p>
                 </div>
                 <figure>
                   <img
-                    src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg"
-                    alt="Image description"
+                    src={shu}
+                    alt="Shu"
                   />
                 </figure>
               </div>
@@ -86,23 +91,23 @@ export const Preview = () => {
             <li className={`${styles.card} ${styles.card_3}`}>
               <div className={styles.card__content}>
                 <div>
-                  <h2>Card Three</h2>
+                  <h2>Wu</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    One of the three major states in the Three Kingdoms period.
                   </p>
                   <p>
                     <a
                       href="#top"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
-                      Read more
+                      Join Wu Now
                     </a>
                   </p>
                 </div>
                 <figure>
                   <img
-                    src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg"
-                    alt="Image description"
+                    src={wu}
+                    alt="Wu"
                   />
                 </figure>
               </div>
@@ -110,23 +115,23 @@ export const Preview = () => {
             <li className={`${styles.card} ${styles.card_4}`}>
               <div className={styles.card__content}>
                 <div>
-                  <h2>Card Four</h2>
+                  <h2>Qun</h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    One of the three major states in the Three Kingdoms period.
                   </p>
                   <p>
                     <a
                       href="#top"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
-                      Read more
+                      Join Qun Now
                     </a>
                   </p>
                 </div>
                 <figure>
                   <img
-                    src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg"
-                    alt="Image description"
+                    src={qun}
+                    alt="Qun"
                   />
                 </figure>
               </div>
@@ -135,6 +140,7 @@ export const Preview = () => {
         </main>
       </div>
       <Footer />
+      <ParticleBackground />
     </div>
   );
 };

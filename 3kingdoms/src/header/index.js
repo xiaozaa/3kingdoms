@@ -75,19 +75,19 @@ export const Header = () => {
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/roadmap"}>{t("home.roadmap")}</a>
+          <a href={"/roadmap"}>Roadmap</a>
         </li>
         {/* Team */}
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/team"}>{t("home.team")}</a>
+          <a href={"/team"}>Team</a>
         </li>
         {/* Preview */}
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/preview"}>{t("home.preview")}</a>
+          <a href={"/preview"}>Gallery</a>
         </li>
       </ul>
 

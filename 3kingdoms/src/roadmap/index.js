@@ -23,7 +23,7 @@ export const Roadmap = () => {
   const { t } = useTranslation();
 
   const authenticate = () => {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
+    return new Promise((resolve) => setTimeout(resolve, 500));
   };
 
   useState(() => {

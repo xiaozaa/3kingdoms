@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import { Header } from "../header";
 import { Footer } from "../footer";
+import { ParticleBackground } from "../content/particleBackground";
 
 import { FlipCard } from "./flipCard";
 
@@ -26,10 +27,10 @@ import bad_back from "../images/cards/bad_back.png";
 import styles from "./index.module.css";
 
 export const Team = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const authenticate = () => {
-    return new Promise((resolve) => setTimeout(resolve, 1000));
+    return new Promise((resolve) => setTimeout(resolve, 500));
   };
 
   useState(() => {
@@ -117,6 +118,7 @@ export const Team = () => {
         </div>
       </div>
       <Footer />
+      <ParticleBackground />
     </div>
   );
 };
