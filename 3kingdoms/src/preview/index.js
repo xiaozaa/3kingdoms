@@ -49,7 +49,7 @@ export const Preview = () => {
                   </p>
                   <p>
                     <a
-                      href="#top"
+                      href="https://discord.gg/tQCP7et2k3"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
                       Join Wei Now
@@ -73,7 +73,7 @@ export const Preview = () => {
                   </p>
                   <p>
                     <a
-                      href="#top"
+                      href="https://discord.gg/dZzfgBWZZY"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
                       Join Shu Now
@@ -97,7 +97,7 @@ export const Preview = () => {
                   </p>
                   <p>
                     <a
-                      href="#top"
+                      href="https://discord.gg/ESmFZ9UnQR"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
                       Join Wu Now
@@ -121,7 +121,7 @@ export const Preview = () => {
                   </p>
                   <p>
                     <a
-                      href="#top"
+                      href="https://discord.gg/EhQbhz9TYN"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
                       Join Qun Now
