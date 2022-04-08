@@ -82,9 +82,12 @@ export const Roadmap = () => {
             <div>
               <h2>初出茅庐</h2>
               <p>The token of heros</p>
-              <p>{t("roadmap.p1_2")}</p>
+              {/* <p>{t("roadmap.p1_2")}</p>
               <p>{t("roadmap.p1_3")}</p>
-              <p>{t("roadmap.p1_4")} </p>
+              <p>{t("roadmap.p1_4")} </p> */}
+              <p>A total of 4000 NFTs will be created base on 80 classic Three Kingdoms characters.</p>
+              <p>Reveal Three Kingdoms character NFTs combo for future various airdrops.</p>
+              <p>Regularly hold NFT community education activities, provide tokenized rewards to community contributors.</p>
             </div>
             <img className={styles.textImg} src={rd1} />
           </div>
@@ -96,10 +99,14 @@ export const Roadmap = () => {
             <div>
               <h2>群雄割据</h2>
               <p>The token of heros</p>
-              <p>{t("roadmap.p2_2")}</p>
+              {/* <p>{t("roadmap.p2_2")}</p>
               <p>{t("roadmap.p2_3")}</p>
               <p>{t("roadmap.p2_4")} </p>
-              <p>{t("roadmap.p2_5")}</p>
+              <p>{t("roadmap.p2_5")}</p> */}
+              <p>Create Three Kingdoms Land NFT for combo holder and start staking system for both NFTs.</p>
+              <p>Various of physical airdrops will be delivered according to snapshots and stacking.</p>
+              <p>Increase game features and types of game base on character NFT and land NFT.</p>
+              <p>Represent, publicity and create NFT projects of traditional oriental culture NFTs.</p>
             </div>
             <img className={styles.textImg} src={rd2} />
           </div>
@@ -111,9 +118,12 @@ export const Roadmap = () => {
             <div>
               <h2>壹齐天下</h2>
               <p>The token of heros</p>
-              <p>{t("roadmap.p3_2")}</p>
+              {/* <p>{t("roadmap.p3_2")}</p>
               <p>{t("roadmap.p3_3")}</p>
-              <p>{t("roadmap.p3_4")} </p>
+              <p>{t("roadmap.p3_4")} </p> */}
+              <p>Create interactive pfp NFT base on snapshots from phase 1 and phase 2.</p>
+              <p>Empower NFT with community cooperation and function development.</p>
+              <p>Improve the war system and community system through the Three Kingdoms metaverse.</p>
             </div>
             <img className={styles.textImg} src={rd3} />
           </div>
@@ -121,6 +131,6 @@ export const Roadmap = () => {
       </div>
       <Footer />
       <ParticleBackground />
-    </div>
+    </div >
   );
 };

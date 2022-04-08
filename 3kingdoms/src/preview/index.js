@@ -115,7 +115,7 @@ export const Preview = () => {
             <li className={`${styles.card} ${styles.card_4}`}>
               <div className={styles.card__content}>
                 <div>
-                  <h2>Qun</h2>
+                  <h2>Qun Xiong</h2>
                   <p>
                     One of the three major states in the Three Kingdoms period.
                   </p>
@@ -124,7 +124,7 @@ export const Preview = () => {
                       href="https://discord.gg/EhQbhz9TYN"
                       className={`{styles.btn} {styles.btn--accent}`}
                     >
-                      Join Qun Now
+                      Join Qun Xiong Now
                     </a>
                   </p>
                 </div>
