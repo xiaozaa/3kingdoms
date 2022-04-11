@@ -11,6 +11,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="./index.css" />
 
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -22,11 +23,42 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Three Kingdoms</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      let $ = (e) => document.querySelector(e);
+      let dots = $(".dots");
+      function animate(element, className) {
+        element.classList.add(className);
+        setTimeout(() => {
+          element.classList.remove(className);
+          setTimeout(() => {
+            animate(element, className);
+          }, 500);
+        }, 2500);
+      }
+      animate(dots, "dots--animate");
+    }
+  </script>
 </head>
 
 <body style="background-color:#1a1a1a;">
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div class="ipl-progress-indicator" id="ipl-progress-indicator">
+    <div class="ipl-progress-indicator-head">
+      <div class="first-indicator"></div>
+      <div class="second-indicator"></div>
+    </div>
+    <div class="insp-logo-frame">
+      <h1>Loading
+        <img src='./jiu.webp' />
+        <div class="dots"><span class="dot z"></span><span class="dot f"></span><span class="dot s"></span><span
+            class="dot t"><span class="dot l"></span></span></div>
+      </h1>
+    </div>
+  </div>
+  <div id="root">
+
+  </div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

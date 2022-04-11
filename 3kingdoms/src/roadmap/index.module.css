@@ -1,56 +1,126 @@
 .roadmapWrapper {
-  background-image: url("../images/bg_rm.webp");
+  background-image: url("../images/new-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: Georgia, "Microsoft YaHei", simsun, serif;
   height: 100vh;
-  overflow-y: scroll;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top h1 {
+  color: var(--color-brown);
+  margin-top: 20px;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+}
+
+.top p {
+  width: 50%;
+  font-family: Georgia, "Microsoft YaHei", simsun, serif;
+  text-align: center;
+  color: #a6a09a;
+}
+
+.top p a {
+  color: #a6a09a;
 }
 
 .main {
   display: flex;
   flex-direction: row;
   height: calc(100vh - 140px);
-  overflow-y: scroll;
-}
-
-.mainLeft,
-.mainRight {
   width: 50%;
+  margin: 0 auto;
 }
 
 .mainLeft {
-  padding: 20px 50px 100px;
+  width: 20%;
+}
+
+.mainMiddle {
+  width: 10%;
+}
+
+.mainRight {
+  width: 70%;
+  padding: 20px 0 0 0;
+}
+
+.mainRight .text {
+  width: 90%;
+  display: none;
+  transform: translateX(50px);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mainRight .text.active {
+  transition-delay: 0.3s;
+  display: block;
+  transform: translateX(0px);
+}
+
+.mainRight .text .textImg {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  left: 150px;
 }
 
 .mainRight img {
   width: 80%;
 }
 
+.mainRight h2::first-letter {
+  font-size: 60px;
+}
+
+.mainRight h2 {
+  text-align: left;
+  color: var(--color-brown);
+  margin-bottom: -8px;
+  margin-left: -8px;
+}
+
+.mainBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mainBanner img:hover {
   cursor: pointer;
 }
 
-.mainBanner {
-  padding: 20px 0 50px;
-}
-
 .mainBanner img {
-  width: 20%;
-  margin: 0 5%;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 120px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 813px) {
   .mainLeft {
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    bottom: 90px;
-    overflow-y: scroll;
+    width: 30%;
   }
 
   .mainRight {
-    display: none;
+    width: 60%;
+  }
+
+  .mainRight h1 {
+    font-size: 20px;
+  }
+
+  .mainRight p {
+    font-size: 14px;
+  }
+
+  .main {
+    width: 70%;
   }
 }

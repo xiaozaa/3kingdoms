@@ -1,8 +1,7 @@
 import React from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import { useTranslation } from "react-i18next";
 
-import languageImg from "../images/language.png";
+import alcolholImg from "../images/jiu.webp";
 import { HamburgerMenu } from "./hamburgerMenu";
 
 import styles from "./index.module.css";
@@ -20,11 +19,14 @@ export const Header = () => {
       <ul>
         {/* LEFT */}
         <li className={`${styles.logoImg} ${styles.webIcon}`}>
-          <a href="/">{t("home.threekingdoms")}</a>
+          {/* <a href="/">{t("home.threekingdoms")}</a> */}
+          <a href="/">
+            <img src={alcolholImg} />
+          </a>
         </li>
         {/* RIGHT */}
         {/* I18N */}
-        <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
+        {/* <li className={`${styles.headerRight} ${styles.icon} ${styles.lng}`}>
           <Dropdown>
             <Dropdown.Toggle>
               <img src={languageImg} />
@@ -48,7 +50,7 @@ export const Header = () => {
               ))}
             </Dropdown.Menu>
           </Dropdown>
-        </li>
+        </li> */}
         {/* discord */}
         <li
           className={`${styles.headerRight} ${styles.icon} ${styles.webIcon}`}
@@ -73,13 +75,19 @@ export const Header = () => {
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/roadmap"}>{t("home.roadmap")}</a>
+          <a href={"/roadmap"}>Roadmap</a>
         </li>
         {/* Team */}
         <li
           className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
         >
-          <a href={"/team"}>{t("home.team")}</a>
+          <a href={"/team"}>Team</a>
+        </li>
+        {/* Preview */}
+        <li
+          className={`${styles.headerRight} ${styles.headerText} ${styles.webIcon}`}
+        >
+          <a href={"/preview"}>Gallery</a>
         </li>
       </ul>
 

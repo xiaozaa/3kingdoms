@@ -1,8 +1,9 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React, { useState } from "react";
+// import { useTranslation } from "react-i18next";
 
 import { Header } from "../header";
 import { Footer } from "../footer";
+import { ParticleBackground } from "../content/particleBackground";
 
 import { FlipCard } from "./flipCard";
 
@@ -26,15 +27,34 @@ import bad_back from "../images/cards/bad_back.png";
 import styles from "./index.module.css";
 
 export const Team = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+
+  const authenticate = () => {
+    return new Promise((resolve) => setTimeout(resolve, 500));
+  };
+
+  useState(() => {
+    authenticate().then(() => {
+      const ele = document.getElementById("ipl-progress-indicator");
+      if (ele) {
+        ele.classList.add("available");
+        setTimeout(() => {
+          ele.outerHTML = "";
+        }, 1000);
+      }
+    });
+  });
 
   return (
     <div className={styles.teamWrapper}>
       <Header />
       <div className={styles.teamContent}>
         <div className={styles.title}>
-          <h1>{t("home.bigGuysGather")}</h1>
-          <p>{t("home.itsAllYou")}</p>
+          <h1>MEET THE TEAM</h1>
+          <p>
+            If you want to know more about the Three Kingdoms nft team members,
+            please check out <a href={"https://mirror.xyz/0x5378FBa192228681473ad1881AaEBff9fB11C9D9/or8QqrM8rNF5PhbraIKpVbeMTnvYxyvhC_6-HJ4CJ3Y"}>here</a>.{" "}
+          </p>
         </div>
         <hr />
         <div className={styles.main}>
@@ -98,6 +118,7 @@ export const Team = () => {
         </div>
       </div>
       <Footer />
+      <ParticleBackground />
     </div>
   );
 };
