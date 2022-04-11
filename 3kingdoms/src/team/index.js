@@ -53,7 +53,7 @@ export const Team = () => {
           <h1>MEET THE TEAM</h1>
           <p>
             If you want to know more about the Three Kingdoms nft team members,
-            please check out <a href={"#"}>here</a>.{" "}
+            please check out <a href={"https://mirror.xyz/0x5378FBa192228681473ad1881AaEBff9fB11C9D9/aDhZC6f8ipmaBOZeW-gfzQzdbnAm0ThArUbQvuhxaq0"}>here</a>.{" "}
           </p>
         </div>
         <hr />
