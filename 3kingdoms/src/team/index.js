@@ -100,21 +100,21 @@ export const Team = () => {
               isFlipped: false,
             }}
           />
-          <FlipCard
+          {/* <FlipCard
             props={{
               front: gango_front,
               back: gango_back,
               isFlipped: false,
             }}
-          />
+          /> */}
 
-          <FlipCard
+          {/* <FlipCard
             props={{
               front: catchon_front,
               back: catchon_back,
               isFlipped: false,
             }}
-          />
+          /> */}
         </div>
       </div>
       <Footer />
